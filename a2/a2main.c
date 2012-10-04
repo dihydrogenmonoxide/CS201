@@ -7,12 +7,22 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "a2main.h"
 
 /*
  * 
  */
 int main(int argc, char** argv) {
+    
+    
 
     return (EXIT_SUCCESS);
 }
 
+
+
+
+Vector* VectorAdd(Vector* v1, Vector* v2)
+{
+    
+}
