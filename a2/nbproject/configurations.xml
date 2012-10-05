@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="84">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
-    <logicalFolder name="f1" displayName="A1" projectFiles="true" kind="ROOT">
-      <itemPath>a1main.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="f2" displayName="A2" projectFiles="true" kind="ROOT">
+    <logicalFolder name="f2" displayName="A2" projectFiles="true">
       <itemPath>a2main.c</itemPath>
-      <itemPath>a2main.h</itemPath>
-    </logicalFolder>
-    <logicalFolder name="f3" displayName="A3" projectFiles="true" kind="ROOT">
-      <itemPath>a3main.c</itemPath>
-    </logicalFolder>
-    <logicalFolder name="f4" displayName="A4" projectFiles="true" kind="ROOT">
-      <itemPath>a4main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
