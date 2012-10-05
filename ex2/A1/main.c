@@ -25,7 +25,7 @@ int main(int argc, char** argv)
     }
     
     
-    int* ptr = &arr;
+    int* ptr = (int*) malloc(10*sizeof(int));
     
     for(i=0; i!= 10; i++)
     {
@@ -38,6 +38,9 @@ int main(int argc, char** argv)
          ptr--;
         printf("\n%i", *ptr);
     }
+    
+    //not really necessary as the applications exists after this -> all mem would be free'd anyways
+    free(ptr);
 
     return (EXIT_SUCCESS);
 }
