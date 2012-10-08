@@ -41,7 +41,7 @@ int main(int argc, char** argv)
         vecs[i].y = rand() / f;
         vecs[i].z = rand() / f;
     }
-    int fl = open("/home/fox/vecs.txt",O_CREAT|O_RDWR, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+    int fl = open("./vecs.txt",O_CREAT|O_RDWR, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
     write(fl,"before\n",strlen("before\n"));
     for(i = 0; i != ArraySize; i++)
     {
