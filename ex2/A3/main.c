@@ -12,7 +12,9 @@
  */
 int main(int argc, char** argv)
 {
-     VectorList l = {0, 0};
+     VectorList* l = malloc(sizeof(VectorList));
+     l->first = 0;
+     l->size = 0;
      Vector a = {1,2,3,0};
      Vector b = {2,9,4,0};
      Vector c = {3,8,5,0};
@@ -22,18 +24,18 @@ int main(int argc, char** argv)
     
     
     
-    insertElementBack(&l, &a);
-    insertElementBack(&l, &b);
-    insertElementBack(&l, &c);
-    insertElementFront(&l, &d);
-    insertElementBack(&l, &e);
-    insertElementBack(&l, &f);
+    insertElementBack(l, &a);
+    insertElementBack(l, &b);
+    insertElementBack(l, &c);
+    insertElementFront(l, &d);
+    insertElementBack(l, &e);
+    insertElementBack(l, &f);
     
-    printf("size %i\n", size(&l));
+    printf("size %i\n", size(l));
     //get first element (vector d)
-    printVec(*getElement(&l,0));
+    printVec(*getElement(l,0));
     //get last element (vector f)
-    printVec(*getElement(&l,size(&l)-1));
+    printVec(*getElement(l,size(l)-1));
 
     
     
