@@ -12,6 +12,7 @@
  */
 int main(int argc, char** argv)
 {
+    //calloc would be easier (and linux zero inits it anyways, that's OS dependant though)
      VectorList* l = malloc(sizeof(VectorList));
      l->first = 0;
      l->size = 0;
