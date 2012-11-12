@@ -1,0 +1,141 @@
+     0.000000 execve("./ex4a2c", ["./ex4a2c"], [/* 47 vars */]) = 0
+     0.000561 brk(0)                    = 0x236a000
+     0.000207 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+     0.000183 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+     0.000153 fstat(3, {st_mode=S_IFREG|0644, st_size=190116, ...}) = 0
+     0.000060 mmap(NULL, 190116, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4b453f3000
+     0.000041 close(3)                  = 0
+     0.000050 open("/usr/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+     0.000044 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\30\2\0\0\0\0\0"..., 832) = 832
+     0.000042 fstat(3, {st_mode=S_IFREG|0755, st_size=2010709, ...}) = 0
+     0.000036 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b453f2000
+     0.000043 mmap(NULL, 3828848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4b44e5a000
+     0.000035 mprotect(0x7f4b44ff7000, 2097152, PROT_NONE) = 0
+     0.000035 mmap(0x7f4b451f7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19d000) = 0x7f4b451f7000
+     0.000045 mmap(0x7f4b451fd000, 15472, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4b451fd000
+     0.000043 close(3)                  = 0
+     0.000043 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b453f1000
+     0.000037 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b453f0000
+     0.000036 arch_prctl(ARCH_SET_FS, 0x7f4b453f1700) = 0
+     0.000116 mprotect(0x7f4b451f7000, 16384, PROT_READ) = 0
+     0.000039 mprotect(0x7f4b45422000, 4096, PROT_READ) = 0
+     0.000033 munmap(0x7f4b453f3000, 190116) = 0
+     0.000076 getcwd("/home/oliver/Projekte/CS201/Ex4", 1024) = 32
+     0.000042 openat(AT_FDCWD, "/home/oliver/Projekte/CS201/Ex4", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+     0.000094 brk(0)                    = 0x236a000
+     0.000031 brk(0x2393000)            = 0x2393000
+     0.000051 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 1), ...}) = 0
+     0.000039 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45421000
+     0.000047 write(1, "            Size      Type      "..., 57) = 57
+     0.000055 getdents(3, /* 8 entries */, 32768) = 232
+     0.000060 stat("/home/oliver/Projekte/CS201/Ex4/ex4a2c", {st_mode=S_IFREG|0755, st_size=21773, ...}) = 0
+     0.000057 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+     0.000042 connect(4, {sa_family=AF_FILE, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+     0.000052 close(4)                  = 0
+     0.000037 socket(PF_FILE, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+     0.000033 connect(4, {sa_family=AF_FILE, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+     0.000041 close(4)                  = 0
+     0.000040 open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4
+     0.000042 fstat(4, {st_mode=S_IFREG|0644, st_size=238, ...}) = 0
+     0.000034 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000034 read(4, "# Begin /etc/nsswitch.conf\n\npass"..., 4096) = 238
+     0.000048 read(4, "", 4096)         = 0
+     0.000070 close(4)                  = 0
+     0.000080 munmap(0x7f4b45420000, 4096) = 0
+     0.000114 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 4
+     0.000073 fstat(4, {st_mode=S_IFREG|0644, st_size=190116, ...}) = 0
+     0.000049 mmap(NULL, 190116, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7f4b453c1000
+     0.000061 close(4)                  = 0
+     0.000060 open("/usr/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 4
+     0.000054 read(4, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\"\0\0\0\0\0\0"..., 832) = 832
+     0.000046 fstat(4, {st_mode=S_IFREG|0755, st_size=52144, ...}) = 0
+     0.000045 mmap(NULL, 2148168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 4, 0) = 0x7f4b44c4d000
+     0.000039 mprotect(0x7f4b44c59000, 2093056, PROT_NONE) = 0
+     0.000038 mmap(0x7f4b44e58000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 4, 0xb000) = 0x7f4b44e58000
+     0.000061 close(4)                  = 0
+     0.000053 mprotect(0x7f4b44e58000, 4096, PROT_READ) = 0
+     0.000040 munmap(0x7f4b453c1000, 190116) = 0
+     0.000102 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000097 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000124 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000091 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000142 close(4)                  = 0
+     0.000039 munmap(0x7f4b45420000, 4096) = 0
+     0.000052 open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 4
+     0.000040 fstat(4, {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000037 fstat(4, {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000032 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000036 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0\0"..., 4096) = 1892
+     0.000043 lseek(4, -1217, SEEK_CUR) = 675
+     0.000034 read(4, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0"..., 4096) = 1217
+     0.000041 lseek(4, 1891, SEEK_SET)  = 1891
+     0.000031 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000052 write(1, "           21773   regular      "..., 72) = 72
+     0.000046 stat("/home/oliver/Projekte/CS201/Ex4/Ex4A1", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000047 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000038 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000035 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000035 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000045 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000039 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000043 write(1, "            4096       dir      "..., 72) = 72
+     0.000042 stat("/home/oliver/Projekte/CS201/Ex4/Ex4A2c", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000043 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000038 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000035 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000035 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000043 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000038 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000042 write(1, "            4096       dir      "..., 72) = 72
+     0.000041 stat("/home/oliver/Projekte/CS201/Ex4/Ex4A2stat", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000043 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000037 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000033 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000034 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000042 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000038 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000042 write(1, "            4096       dir      "..., 72) = 72
+     0.000049 stat("/home/oliver/Projekte/CS201/Ex4/..", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000043 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000037 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000033 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000034 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000042 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000038 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000043 write(1, "            4096       dir      "..., 72) = 72
+     0.000052 stat("/home/oliver/Projekte/CS201/Ex4/A2cp", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000058 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000039 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000036 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000035 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000042 close(4)                  = 0
+     0.000033 munmap(0x7f4b45420000, 4096) = 0
+     0.000040 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000042 write(1, "            4096       dir      "..., 72) = 72
+     0.000048 stat("/home/oliver/Projekte/CS201/Ex4/Ex4A3", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000043 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000037 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000035 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000033 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000042 close(4)                  = 0
+     0.000034 munmap(0x7f4b45420000, 4096) = 0
+     0.000039 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000042 write(1, "            4096       dir      "..., 72) = 72
+     0.000048 stat("/home/oliver/Projekte/CS201/Ex4/.", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+     0.000044 open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+     0.000038 fstat(4, {st_mode=S_IFREG|0644, st_size=738, ...}) = 0
+     0.000035 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4b45420000
+     0.000036 read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 738
+     0.000041 close(4)                  = 0
+     0.000034 munmap(0x7f4b45420000, 4096) = 0
+     0.000038 stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=1892, ...}) = 0
+     0.000042 write(1, "            4096       dir      "..., 72) = 72
+     0.000048 getdents(3, /* 0 entries */, 32768) = 0
+     0.000036 close(3)                  = 0
+     0.000042 exit_group(0)             = ?
+     0.000088 +++ exited with 0 +++

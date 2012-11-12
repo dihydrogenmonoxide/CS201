@@ -1,0 +1,9 @@
+Selbstgemachtes ls
+Aufrufe: 140
+Geschrieben Zeichen: 633
+Zeit: 0.000042s
+
+Gnu ls
+Aufrufe: 91
+Geschriebene Zeichen: 41
+Zeit: 0.000055s
