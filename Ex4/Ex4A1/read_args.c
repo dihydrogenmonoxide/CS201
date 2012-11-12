@@ -7,32 +7,36 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <getopt.h>
 
 /*
  * 
  */
 int main(int argc, char** argv) 
 {
-    int i;
-    for(i = 0; i != argc; i++)
+    int opt;
+    size_t j;
+    while ((opt = getopt(argc, argv, "ht:")) != -1)
     {
-        if(strcasecmp(argv[i],"-t")==0)
+        switch(opt)
         {
-            i++;
-            if(argc > i)//against sneaky persons not passing on a string
-            {
-                int j;
-                for(j=strlen(argv[i]); j != 0; j--)
+            case 'h':
+                printf("Here\'s some Help:\n-h prints this help thingy\n-t \"blah blah blah\" prints the String in reversed order\n");
+                return (EXIT_SUCCESS);
+            case 't':
+                
+                for(j=strlen(optarg); j != 0; j--)
                 {
-                    printf("%c",argv[i][j]);
+                    printf("%c",optarg[j]);
                 }
                 printf("\n");
                 return (EXIT_SUCCESS);
-            }
+            default:
+               break;
         }
     }
 
-    printf("Heres some Help:\n-h prints this help thingy\n-t \"blah blah blah\" prints the String in reversed order");
-    return (EXIT_SUCCESS);
+    printf("Here\'s some Help:\n-h prints this help thingy\n-t \"blah blah blah\" prints the String in reversed order\n");
+    return (EXIT_FAILURE);
 }
 
