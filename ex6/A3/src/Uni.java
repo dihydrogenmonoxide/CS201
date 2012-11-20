@@ -1,7 +1,4 @@
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 /* Rechnerarchitektur und Betriebssysteme �bung 4
 
@@ -28,11 +25,17 @@ class Uni {
     try {
         chef.join();
     } catch (InterruptedException ex) {}
+    
     for(Prof p : prof)
     {
         p.interrupt();
+          try {
+              p.join();
+          } catch (InterruptedException ex) {}
     }
-    System.out.println("Alles genomt; das ganze halt");
+    
+    System.out.println("Alles gegessen; shutting down");
+    
   }
 }
 

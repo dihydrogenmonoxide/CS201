@@ -47,6 +47,6 @@ class Prof extends Thread {
                 System.out.println ("(" + System.currentTimeMillis() + ") Prof " + id + ": Das ist jetzt das " + gegessen + "te mal und ich weiss immer noch nicht wo die Gabeln sind.");
             }
         } 
-        catch (InterruptedException e) {}
+        catch (InterruptedException e) {System.out.println ("(" + System.currentTimeMillis() + ") Prof " + id + ":goodbye");}
     }
 }
