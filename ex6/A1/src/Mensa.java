@@ -1,8 +1,6 @@
 
 import java.util.Arrays;
 import java.util.concurrent.ConcurrentLinkedQueue;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /* Rechnerarchitektur und Betriebssysteme �bung 4
@@ -61,7 +59,8 @@ class Mensa
         if(meals.isEmpty())
         {
             System.out.println ("(" + System.currentTimeMillis() + ") " +"Mensa: Nichts mehr da, Herr Prof " + id + ", sie muessen warten!");
-            try {
+            try 
+            {
                 this.wait();
             } catch (InterruptedException ex) {}
         }
